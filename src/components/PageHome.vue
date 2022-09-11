@@ -1,29 +1,41 @@
 <script setup lang="ts">
-
-</script>
+import RecipeList from "@/components/RecipeList.vue";</script>
 
 <template>
-  <div class="search-bar">
-    <form class="example">
-      <label for="search"></label>
-      <input type="text" placeholder="Search.." name="search" id="search">
-      <button type="submit"><img src="./images/icons8-search-24.png" alt="search icon">
-      </button>
-    </form>
+  <div class="center-content">
+    <div class="search-bar">
+      <form class="example">
+        <label for="search"></label>
+        <input type="text" placeholder="Search.." name="search" id="search">
+        <button type="submit"><img src="/icons8-search-24.png" alt="search icon">
+        </button>
+      </form>
+    </div>
+    <div class="news">
+      <h2>
+        NEW RECIPES
+      </h2>
+    </div>
+    <RecipeList :featured-only="true"/>
   </div>
-  <div class="news">
-    <h2>
-      NEW RECIPES
-    </h2>
-  </div>
+
 </template>
 
 <style scoped>
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+}
 
 .search-bar {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .example input[type=text] {

@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
-</script>
+import {RouterLink} from 'vue-router'</script>
 
 <template>
     <header class="content">
@@ -38,12 +37,6 @@ h1 h2 h3 {
   font-family: Serif, serif;
 }
 
-.main-background {
-  background: url("https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-  background-size: cover;
-  min-width: 350px;
-}
-
 .content {
   margin: 0 auto;
   display: flex;
@@ -56,7 +49,7 @@ h1 h2 h3 {
   overflow: hidden;
   background-color: #781C68;
   min-width: 350px;
-  border: black solid 1px;
+  border: black solid 2px;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
@@ -135,6 +128,6 @@ h1 h2 h3 {
   height: 100px;
   color: #000000;
   border-radius: 0 0 var(--border-radius) var(--border-radius);
-  border: black solid 1px
+  border: black solid 2px
 }
 </style>
